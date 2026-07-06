@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Aidan Wood</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="path">~/aidan-wood</div>
+      <div class="name">aidan<span class="dot">.</span>wood</div>
+    </div>
+    <nav class="tree">
+      <a href="index.html" class="tree-item"><span class="glyph">▸</span>about.md</a>
+      <a href="academics.html" class="tree-item"><span class="glyph">▸</span>academics.log</a>
+      <a href="experience.html" class="tree-item"><span class="glyph">▸</span>experience.sh</a>
+      <a href="ctf.html" class="tree-item"><span class="glyph">▾</span>ctf/</a>
+      <a href="blog.html" class="tree-item"><span class="glyph">▾</span>blog/</a>
+      <a href="projects.html" class="tree-item active"><span class="glyph">▾</span>projects/</a>
+      <a href="skills.html" class="tree-item"><span class="glyph">▸</span>skills.json</a>
+      <a href="contact.html" class="tree-item"><span class="glyph">▸</span>contact.md</a>
+    </nav>
+    <div class="tree-hint">press <kbd>Ctrl</kbd>+<kbd>K</kbd> to jump anywhere</div>
+    <div class="sidebar-status">
+      <div class="status-line"><span class="led"></span>SOAR Platform Engineer Intern @National Grid</div>
+      <div class="status-line">📍 Essex, UK</div>
+      <div class="status-line">🎓 BSc CompSci, UEA — Yr 3</div>
+    </div>
+    <div class="sidebar-social">
+      <a href="https://github.com/AidanHWood" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/aidan-h-wood/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://tryhackme.com/p/Sylvxnus" target="_blank" rel="noopener noreferrer" aria-label="TryHackMe"><i class="fas fa-terminal"></i></a>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop"></div>
+
+  <div class="main-col">
+    <div class="topbar">
+      <div class="topbar-cmd">
+        <span class="prompt">MSI@Sylvxnus:~$</span>
+        <span class="path" data-command="ls projects/"></span>
+        <span class="caret"></span>
+      </div>
+      <div class="topbar-right">
+        <button class="palette-trigger" data-open-palette><i class="fas fa-magnifying-glass"></i> Jump to <kbd class="kbd-hint">CTRL + K</kbd></button>
+        <button class="mobile-nav-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+
+    <main class="page">
+      <div class="eyebrow">things I've built</div>
+      <h1 class="page-title">Projects</h1>
+      <p class="page-lede">A mix of security tooling, computer vision, and coursework I've carried further than the brief asked for.</p>
+
+      <div class="project-feature">
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/yolo-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="card project-card">
+          <h3>Custom YOLOv8 Object Detection Model</h3>
+          <p>Trained a custom YOLOv8 model on a small, self-curated dataset. Used Label Studio to annotate images and wrote Python scripts to automate file organisation and filename cleanup, then tested the model live via webcam.</p>
+          <div class="accuracy-list">
+            <div><span>Orange</span><span>0.92</span></div>
+            <div><span>Reece's Pieces</span><span>0.94</span></div>
+            <div><span>Grapefruit</span><span>0.86</span></div>
+            <div><span>Croissant</span><span>0.84</span></div>
+            <div><span>Pineapple</span><span>~0.62 (still tuning)</span></div>
+          </div>
+          <p>Covers dataset preparation, annotation, training, evaluation and live deployment end to end.</p>
+        </div>
+      </div>
+      <div class="grid-3">
+          <div class="card project-card">
+            <h3>Password Manager</h3>
+            <p>A Python password manager that encrypts stored credentials with <strong>cryptography.fernet</strong>, with a clean GUI built in <strong>CustomTkinter</strong> for adding, viewing and managing entries.</p>
+            <p>Helped cement Python fundamentals, safe data-handling practices, and GUI development.</p>
+            <a class="gh-link" href="https://github.com/AidanHWood/PyPasswordManager" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+
+          <div class="card project-card">
+            <h3>RE</h3>
+            <p>A repo of detailed writeups from my reverse engineering practice — working through crackmes and challenge binaries using <strong>Ghidra</strong> for static analysis and <strong>DIE (Detect It Easy)</strong> for packer/compiler identification.</p>
+            <p>Documents the process end to end: initial triage, decompilation, and the reasoning behind each solve.</p>
+            <a class="gh-link" href="https://github.com/AidanHWood/RE" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+
+          <div class="card project-card">
+            <h3>The Portfolio Planner</h3>
+            <p>Built for A-Level Computer Science in 2024. Python, using Hashlib, CustomTkinter, Matplotlib and SQLite3, with the Google Calendar API wired in for planning.</p>
+            <p>Includes spending-trend graphs and a login/signup flow with hashed and salted passwords.</p>
+            <a class="gh-link" href="https://github.com/AidanHWood/ThePortfolioPlanner" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+
+      <div class="page-footer-nav">
+        <a href="blog.html">← blog/</a>
+        <span>~/aidan-wood/projects/</span>
+        <a href="skills.html">next: skills.json →</a>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

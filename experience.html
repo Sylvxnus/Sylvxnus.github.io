@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience — Aidan Wood</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="path">~/aidan-wood</div>
+      <div class="name">aidan<span class="dot">.</span>wood</div>
+    </div>
+    <nav class="tree">
+      <a href="index.html" class="tree-item"><span class="glyph">▸</span>about.md</a>
+      <a href="academics.html" class="tree-item"><span class="glyph">▸</span>academics.log</a>
+      <a href="experience.html" class="tree-item active"><span class="glyph">▸</span>experience.sh</a>
+      <a href="ctf.html" class="tree-item"><span class="glyph">▾</span>ctf/</a>
+      <a href="blog.html" class="tree-item"><span class="glyph">▾</span>blog/</a>
+      <a href="projects.html" class="tree-item"><span class="glyph">▾</span>projects/</a>
+      <a href="skills.html" class="tree-item"><span class="glyph">▸</span>skills.json</a>
+      <a href="contact.html" class="tree-item"><span class="glyph">▸</span>contact.md</a>
+    </nav>
+    <div class="tree-hint">press <kbd>Ctrl</kbd>+<kbd>K</kbd> to jump anywhere</div>
+    <div class="sidebar-status">
+      <div class="status-line"><span class="led"></span>SOAR Platform Engineer Intern @National Grid</div>
+      <div class="status-line">📍 Essex, UK</div>
+      <div class="status-line">🎓 BSc CompSci, UEA — Yr 3</div>
+    </div>
+    <div class="sidebar-social">
+      <a href="https://github.com/AidanHWood" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/aidan-h-wood/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://tryhackme.com/p/Sylvxnus" target="_blank" rel="noopener noreferrer" aria-label="TryHackMe"><i class="fas fa-terminal"></i></a>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop"></div>
+
+  <div class="main-col">
+    <div class="topbar">
+      <div class="topbar-cmd">
+        <span class="prompt">MSI@Sylvxnus:~$</span>
+        <span class="path" data-command="./experience.sh --list"></span>
+        <span class="caret"></span>
+      </div>
+      <div class="topbar-right">
+        <button class="palette-trigger" data-open-palette><i class="fas fa-magnifying-glass"></i> Jump to <kbd class="kbd-hint">CTRL + K</kbd></button>
+        <button class="mobile-nav-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+
+    <main class="page">
+      <div class="eyebrow">work history</div>
+      <h1 class="page-title">Experience</h1>
+      <p class="page-lede">Run as a directory listing, newest first. Click any entry to <code>cat</code> the full detail.</p>
+
+      <div class="term-window">
+        <div class="term-titlebar">
+          <div class="term-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+          <span class="term-name">bash — experience.sh</span>
+        </div>
+        <div class="term-body">
+          <div class="term-line"><span class="prompt">$</span><span class="cmd">ls -la -t ~/experience</span></div>
+          <div class="term-out" style="margin-bottom:14px;">total 4</div>
+
+          <div class="ls-header-row ls-row" style="cursor:default;">
+            <span>permissions</span><span>links</span><span>owner</span><span>size</span><span>modified</span><span>name</span>
+          </div>
+
+          <div class="ls-row" data-toggle>
+            <span class="perm">drwxr-xr-x</span><span>4</span><span>aidan</span><span>—</span><span>Jun 2026</span><span class="fname">national-grid-internship/</span>
+          </div>
+          <div class="ls-detail">
+            <span class="meta">RUNNING · Jun 2026 – Sep 2026</span>
+            <h4>SOAR Platform Engineering Internship</h4>
+            <p>A twelve-week internship with the SOAR (Security Orchestration, Automation and Response) platform engineering team at National Grid.</p>
+            <p style="margin-top:10px;">I can't go into specifics — but it's been a hands-on introduction to enterprise-scale security operations, agile delivery, and working across a large technical organisation.</p>
+          </div>
+
+          <div class="ls-row" data-toggle>
+            <span class="perm">-rw-r--r--</span><span>1</span><span>aidan</span><span>continuous</span><span>2026</span><span class="fname">cybersecurity-blog.md</span>
+          </div>
+          <div class="ls-detail">
+            <span class="meta">ONGOING · Personal project</span>
+            <h4>Cyber Exploits Blog</h4>
+            <p>A personal blog tracking newly disclosed exploits and breaches as they happen — reading through vendor advisories, news coverage and CISA's KEV catalog to keep a running log of what's being exploited in the wild and why it matters.</p>
+            <p style="margin-top:10px;">Doubles as a way to stay sharp on emerging CVEs between CTFs.</p>
+          </div>
+
+          <div class="ls-row" data-toggle>
+            <span class="perm">-rw-r--r--</span><span>1</span><span>aidan</span><span>8.0K</span><span>2024–25</span><span class="fname">publicity-kit-secretary.log</span>
+          </div>
+          <div class="ls-detail">
+            <span class="meta">UEA Sport — Committee Role</span>
+            <h4>Publicity and Kit Secretary</h4>
+            <p>Managed social media, branding and kit for UEA Swimming and Water Polo. Responsible for creating digital content and marketing strategy to promote the club, using Adobe Suite, Canva and Blender across various social platforms.</p>
+            <p style="margin-top:10px;">Content strategy drove a <strong style="color:var(--text)">3M+ increase in Instagram viewership</strong> over the season — the club's biggest digital reach to date.</p>
+            <span class="pill green" style="margin-top:10px;"><i class="fas fa-arrow-trend-up"></i> 3M+ viewership growth</span>
+            <p style="margin-top:14px;">Prepared handover materials for the incoming committee at the end of the role.</p>
+          </div>
+
+          <div class="ls-row" data-toggle>
+            <span class="perm">-rw-r--r--</span><span>1</span><span>aidan</span><span>2.0K</span><span>Aug 2022</span><span class="fname">data-entry-atlantic-microwave.txt</span>
+          </div>
+          <div class="ls-detail">
+            <span class="meta">ETL Systems / Atlantic Microwave — Summer 2022</span>
+            <h4>Data Entry Specialist</h4>
+            <p>Responsible for transferring potential sales leads from the legacy system (ACT) onto Microsoft Dynamics, ensuring the system changeover was completed smoothly and without data loss.</p>
+          </div>
+
+          <div class="ls-hint">4 entries · click a row, or use ↑ ↓ Enter once focused</div>
+        </div>
+      </div>
+
+      <div class="page-footer-nav">
+        <a href="academics.html">← academics.log</a>
+        <span>~/aidan-wood/experience.sh</span>
+        <a href="ctf.html">next: ctf/ →</a>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTF &amp; Achievements — Aidan Wood</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="path">~/aidan-wood</div>
+      <div class="name">aidan<span class="dot">.</span>wood</div>
+    </div>
+    <nav class="tree">
+      <a href="index.html" class="tree-item"><span class="glyph">▸</span>about.md</a>
+      <a href="academics.html" class="tree-item"><span class="glyph">▸</span>academics.log</a>
+      <a href="experience.html" class="tree-item"><span class="glyph">▸</span>experience.sh</a>
+      <a href="ctf.html" class="tree-item active"><span class="glyph">▾</span>ctf/</a>
+      <a href="blog.html" class="tree-item"><span class="glyph">▾</span>blog/</a>
+      <a href="projects.html" class="tree-item"><span class="glyph">▾</span>projects/</a>
+      <a href="skills.html" class="tree-item"><span class="glyph">▸</span>skills.json</a>
+      <a href="contact.html" class="tree-item"><span class="glyph">▸</span>contact.md</a>
+    </nav>
+    <div class="tree-hint">press <kbd>Ctrl</kbd>+<kbd>K</kbd> to jump anywhere</div>
+    <div class="sidebar-status">
+      <div class="status-line"><span class="led"></span>SOAR Platform Engineer Intern @National Grid</div>
+      <div class="status-line">📍 Essex, UK</div>
+      <div class="status-line">🎓 BSc CompSci, UEA — Yr 3</div>
+    </div>
+    <div class="sidebar-social">
+      <a href="https://github.com/AidanHWood" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/aidan-h-wood/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://tryhackme.com/p/Sylvxnus" target="_blank" rel="noopener noreferrer" aria-label="TryHackMe"><i class="fas fa-terminal"></i></a>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop"></div>
+
+  <div class="main-col">
+    <div class="topbar">
+      <div class="topbar-cmd">
+        <span class="prompt">MSI@Sylvxnus:~$</span>
+        <span class="path" data-command="ls ctf/"></span>
+        <span class="caret"></span>
+      </div>
+      <div class="topbar-right">
+        <button class="palette-trigger" data-open-palette><i class="fas fa-magnifying-glass"></i> Jump to <kbd class="kbd-hint">CTRL + K</kbd></button>
+        <button class="mobile-nav-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+
+    <main class="page">
+      <div class="eyebrow">competitions &amp; credentials</div>
+      <h1 class="page-title">CTF &amp; Achievements</h1>
+      <p class="page-lede">Web exploitation, OSINT & Forensics are where I'm strongest, with reverse engineering being developed. Most of this comes from jeopardy-style CTFs and self-directed practice.</p>
+
+      <div class="grid-3">
+
+        <div class="card ctf-card">
+          <img src="assets/img/uscg.png" alt="US Cyber Open Season VI Credential" class="contain">
+          <div class="ctf-card-body">
+            <h3>US Cyber Open — Season VI</h3>
+            <p>Competed in Season VI (2026) of the US Cyber Open, a national-level competitive CTF sponsored by NIST, NICE, Mastercard and Battelle.</p>
+            <span class="pill amber"><i class="fas fa-flag"></i> Competitor credential</span>
+          </div>
+        </div>
+
+        <div class="card ctf-card">
+          <img src="assets/img/ukct-finals.jpeg" alt="UK Cyber Team National Finals lanyard" class="contain">
+          <div class="ctf-card-body">
+            <h3>UK Cyber Team — National Finals</h3>
+            <p>Selected to compete at the UKCT2026 Live Final in Cheltenham on SudoRange, one of the UK's most prestigious student cybersecurity competitions.</p>
+            <span class="pill"><i class="fas fa-shield-halved"></i> National Finalist</span>
+          </div>
+        </div>
+
+        <div class="card ctf-card">
+          <img src="assets/img/thm.png" alt="TryHackMe profile — Sylvxnus" class="contain">
+          <div class="ctf-card-body">
+            <h3>TryHackMe — Sylvxnus</h3>
+            <p>Rank <strong style="color:var(--text)">Top 20%</strong> · Level <strong style="color:var(--text)">[0x6] Voyager</strong> · 39 rooms completed · 6 badges earned.</p>
+            <div class="rank-track"><div class="rank-fill" data-fill="80%"></div></div>
+            <div class="rank-labels"><span>Top 20%</span><span>global ranking</span></div>
+            <span class="pill green"><i class="fas fa-bolt"></i> Active</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="term-window" style="margin-top:44px;">
+        <div class="term-titlebar">
+          <div class="term-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+          <span class="term-name">bash — ctf areas</span>
+        </div>
+        <div class="term-body">
+          <div class="term-line"><span class="prompt">$</span><span class="cmd">cat strengths.txt</span></div>
+          <div class="term-out">web_exploitation: strong</div>
+          <div class="term-out">osint: strong</div>
+          <div class="term-out">forensics: strong</div>
+          <div class="term-out">reverse_engineering: growing (Ghidra, x86-64, crackmes.one)</div>
+        </div>
+      </div>
+
+      <div class="page-footer-nav">
+        <a href="experience.html">← experience.sh</a>
+        <span>~/aidan-wood/ctf/</span>
+        <a href="blog.html">next: blog/ →</a>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
