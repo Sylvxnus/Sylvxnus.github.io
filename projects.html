@@ -80,9 +80,21 @@
       <div class="grid-3">
           <div class="card project-card">
             <h3>AutoRecon Framework</h3>
-            <p>An automated recon pipeline that chains <strong>Subfinder</strong>, <strong>naabu</strong> and <strong>httpx</strong> — subdomain enumeration feeds port scanning, which feeds service fingerprinting — with results stored in SQLite and diffed run-over-run to flag new subdomains, newly opened ports, and changed services.</p>
-            <p>Week 2 of a year-long 52-projects-in-52-weeks security build; scans are restricted to explicitly authorized targets only.</p>
+            <p>An automated recon pipeline that chains <strong>Subfinder</strong>, <strong>naabu</strong> and <strong>httpx</strong> — subdomain enumeration feeds port scanning, which feeds service fingerprinting — with results stored in SQLite and diffed run-over-run to flag new subdomains, newly opened ports, and changed services, with alerts pushed straight to <strong>Slack</strong>.</p>
+            <p>Week 1/2 of a year-long 52-projects-in-52-weeks security build; scans are restricted to explicitly authorized targets only.</p>
             <a class="gh-link" href="https://github.com/Sylvxnus/autorecon-framework" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+          <div class="card project-card">
+            <h3>crAPI Business Logic Pentest</h3>
+            <p>A business-logic pentest against <strong>crAPI</strong>, OWASP's intentionally vulnerable API, chaining ten findings — account takeover, mass assignment, NoSQL/SQL injection, SSRF — into a JWT <code>alg:none</code> bug that impersonates any account.</p>
+            <p>Week 3 of a year-long 52-projects-in-52-weeks security build; testing performed against a locally deployed training instance only.</p>
+            <a class="gh-link" href="https://github.com/Sylvxnus/crAPI-" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+          <div class="card project-card">
+            <h3>Data Breach Chronology EDA</h3>
+            <p>EDA on <strong>Have I Been Pwned's</strong> public breach dataset — 1,026 breaches since 2007 — cleaned and analyzed in <code>pandas</code>/<code>matplotlib</code> to surface patterns in leaked credentials, breach frequency over time, and a sharp decline in password-exposure rate driven by aggregated combolists and stealer logs.</p>
+            <p>Week 4 of a year-long 52-projects-in-52-weeks security build; analysis performed on publicly reported breach metadata only.</p>
+            <a class="gh-link" href="https://github.com/Sylvxnus/breach-eda" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
           </div>
           <div class="card project-card">
             <h3>RE</h3>
