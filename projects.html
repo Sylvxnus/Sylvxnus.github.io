@@ -79,6 +79,12 @@
       </div>
       <div class="grid-3">
           <div class="card project-card">
+            <h3>Tapestry — OSINT Aggregator</h3>
+            <p>A custom OSINT aggregator correlating username, domain/infra, and breach data — via <strong>GitHub</strong>, <strong>Docker Hub</strong>, <strong>dev.to</strong>, <strong>Steam</strong>, <strong>WHOIS/DNS/crt.sh</strong>, and <strong>XposedOrNot</strong> — into one flagged report. Packaged as a pip-installable, pipeable CLI with tests and CI.</p>
+            <p>Week 7 of a 52-projects-in-52-weeks security build; every lookup is passive, no active scanning.</p>
+            <a class="gh-link" href="https://github.com/Sylvxnus/tapestry-tool" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+          <div class="card project-card">
             <h3>AutoRecon Framework</h3>
             <p>An automated recon pipeline that chains <strong>Subfinder</strong>, <strong>naabu</strong> and <strong>httpx</strong> — subdomain enumeration feeds port scanning, which feeds service fingerprinting — with results stored in SQLite and diffed run-over-run to flag new subdomains, newly opened ports, and changed services, with alerts pushed straight to <strong>Slack</strong>.</p>
             <p>Week 1/2 of a year-long 52-projects-in-52-weeks security build; scans are restricted to explicitly authorized targets only.</p>
@@ -95,6 +101,18 @@
             <p>EDA on <strong>Have I Been Pwned's</strong> public breach dataset — 1,026 breaches since 2007 — cleaned and analyzed in <code>pandas</code>/<code>matplotlib</code> to surface patterns in leaked credentials, breach frequency over time, and a sharp decline in password-exposure rate driven by aggregated combolists and stealer logs.</p>
             <p>Week 4 of a year-long 52-projects-in-52-weeks security build; analysis performed on publicly reported breach metadata only.</p>
             <a class="gh-link" href="https://github.com/Sylvxnus/breach-eda" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+          <div class="card project-card">
+            <h3>Race Condition Auto-Detector</h3>
+            <p>A <strong>Burp Suite</strong> extension, written in <strong>Kotlin</strong> against the Montoya API, targeting a vulnerability class most tooling ignores: race conditions. Passively scores requests for race-prone signals as you browse, fires concurrent request batches at any endpoint with one click via a <code>CyclicBarrier</code>-synchronized engine, and reports confirmed wins as native Burp <code>AuditIssue</code>s straight into the Site Map.</p>
+            <p>Week 5 of a year-long 52-projects-in-52-weeks security build; testing performed against a locally hosted, deliberately vulnerable test app only.</p>
+            <a class="gh-link" href="https://github.com/Sylvxnus/burp-race-detector" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+          <div class="card project-card">
+            <h3>Binary Exploitation: Stack Overflow → ret2libc</h3>
+            <p>Worked through classic binary exploitation against a mix of self-built targets and Protostar's <code>stack0</code> — <strong>ret2win</strong> control-flow hijacks with and without argument control, exact overflow-offset discovery via <strong>pwntools</strong>' <code>cyclic()</code> and core-dump analysis, and a full two-stage <strong>ret2libc</strong> chain that leaks a libc address at runtime and pops a shell against a live-ASLR binary.</p>
+            <p>Week 6 of a year-long 52-projects-in-52-weeks security build; targets were self-written binaries or Protostar's public training VM only.</p>
+            <a class="gh-link" href="https://github.com/Sylvxnus/RE_BIN" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
           </div>
           <div class="card project-card">
             <h3>RE</h3>
